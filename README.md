@@ -6,7 +6,7 @@ Presto Server Deployment with pinot
 Hi! Here we will deploy the presto server for **pinot db**. 
 
 ### prerequisite
-* java8
+* git
 * docker
 
 # STEPS
