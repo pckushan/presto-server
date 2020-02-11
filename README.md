@@ -8,6 +8,13 @@ Hi! Here we will deploy the presto server for **pinot db**.
 ### prerequisite
 * git
 * docker
+* If you need a connector for **pinot** install the pinot and get the pinot controller url or else use a installed pinot controller url
+
+		ex: http://localhost:9000/query
+		
+this host need to be put in the **pinot.properties** configurations in the ***etc*** folder
+* list of connectors as per the presto documentation 
+	* [connectors](https://prestodb.io/docs/current/connector.html) 
 
 # STEPS
 
@@ -17,7 +24,7 @@ Follow these steps to configure and deploy,  the **pinot server**
 > git clone https://github.com/pckushan/presto-server.git
 > 
 ## 2) Edit the *Dockerfile*
-Get  a version of the presto binary from [presto-server version list]([https://repo1.maven.org/maven2/com/facebook/presto/presto-server/](https://repo1.maven.org/maven2/com/facebook/presto/presto-server/))
+Get  a version of the presto binary from [presto-server version list]((https://repo1.maven.org/maven2/com/facebook/presto/presto-server/))
 add the selected version number from the list given above to the **Dockerfile**
 	
 	ARG PRESTO_VERSION=0.230
