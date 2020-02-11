@@ -14,7 +14,7 @@ Hi! Here we will deploy the presto server for **pinot db**.
 Follow these steps to configure and deploy,  the **pinot server** 
 
 ## 1) Clone the source project
-> git clone -------------------------
+> git clone https://github.com/pckushan/presto-server.git
 > 
 ## 2) Edit the *Dockerfile*
 Get  a version of the presto binary from [presto-server version list]([https://repo1.maven.org/maven2/com/facebook/presto/presto-server/](https://repo1.maven.org/maven2/com/facebook/presto/presto-server/))
