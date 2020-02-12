@@ -25,6 +25,7 @@ RUN apt-get update && \
 #COPY presto-server-${PRESTO_VERSION}.tar.gz ${PRESTO_HOME}/
 
 RUN echo [Trying to get presto version ${PRESTO_VERSION} binary and install into ${PRESTO_HOME}] && \
+    mkdir ${PRESTO_HOME} && \
     cd ${PRESTO_HOME} && \
     wget -c https://repo1.maven.org/maven2/com/facebook/presto/presto-server/${PRESTO_VERSION}/presto-server-${PRESTO_VERSION}.tar.gz && \
     chmod +x presto-server-${PRESTO_VERSION}.tar.gz && \
